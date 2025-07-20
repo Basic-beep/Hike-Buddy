@@ -1,4 +1,9 @@
 <!DOCTYPE html>
+<script lang="ts">
+   import { signIn } from "@auth/sveltekit/client"
+   import { SignIn } from "@auth/sveltekit/components"
+</script>
+ 
 <style>
     h1 {text-align: center;}
     h2 {text-align: center;}
@@ -20,6 +25,11 @@
 <body style="background-color:#90ee90">
     <h1 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Welcome To HikeBuddy!</h1>
     <h2 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Track your hikes and milage</h2>
+    <div>
+      <img src="C:\Users\Ellio\Downloads\GitHub_Logos.zip\GitHub Logos\PNG\GitHub_Invertocat_Dark" alt="GitHub" />
+      <SignIn provider="github" signInPage="signin" />
+    </div> 
+    
     <div class="footer">
         <p>
             Made with ❤️ by BasicBirdy
